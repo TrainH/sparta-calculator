@@ -16,6 +16,7 @@ public class Main {
             System.out.println("두번째 양의 정수 : ");
             int integer2 = sc.nextInt();
 
+            sc.nextLine();
 
             System.out.println("사칙연산 기호를 정확하게 입력하세요. (+, -, ×, ÷)");
 
@@ -56,6 +57,7 @@ public class Main {
                 System.out.println();
             }
         }
+        sc.close();
         System.out.println("계산기가 종료되었습니다.");
     }
 
