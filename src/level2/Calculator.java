@@ -8,6 +8,8 @@ import java.util.Queue;
 public class Calculator {
     private final Queue<Double> results = new LinkedList<>(); // collection 타입 필드
     private double result;
+
+
     public Calculator() {} // 기본 생성자
 
 
@@ -27,13 +29,14 @@ public class Calculator {
                 break;
             case '÷':
                 if (integer2 == 0) {
-                    System.out.println("0으로 나눌 수 없습니다.");
-                    return false;
+                    System.out.println("* 0으로 나눌 수 없습니다. 다시 시도해주세요.");
+                    return false; // 잘못된 연산자 처리 일때 false로 반환
                 }
                 result = (double) integer1 / integer2;
                 break;
             default:
-                return false; // 잘못된 연산자 처리
+                System.out.println("* 잘못된 연산자를 입력하셨습니다. 다시 시도해주세요.");
+                return false; // 잘못된 연산자 처리 일때 알려줌
         }
 
         System.out.println("    (계산식) " + integer1 + " " + operator + " " + integer2 + " = " + result);

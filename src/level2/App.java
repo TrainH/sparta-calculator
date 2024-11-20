@@ -22,25 +22,26 @@ public class App {
             System.out.print("  두번째 양의 정수: ");
             int integer2 = sc.nextInt();
 
+            sc.nextLine();
+
             System.out.print("  사칙연산 기호(+, -, ×, ÷): ");
             char operator = sc.next().charAt(0);
 
             System.out.println("----------------------------------------------------------------------");
             System.out.println("2. 계산결과");
-            if (!calculator.calculate(operator, integer1, integer2)) {
-                System.out.println("* 잘못된 연산자를 입력하셨습니다. 다시 시도해주세요.");
+            if (!calculator.calculate(operator, integer1, integer2)) { // 잘못된 연산처리일때 while문 탈출 해서 다시 시도
                 continue;
             }
 
             System.out.println("----------------------------------------------------------------------");
-            System.out.println("2. 계산 결과 조회");
+            System.out.println("3. 계산 결과 조회");
 
             System.out.println("    컬랙션에 저장된 계산결과(최근): " + calculator.getResult());
             System.out.println("    컬랙션에 저장된 계산결과들: " + calculator.getResults());
 
             System.out.println("----------------------------------------------------------------------");
 
-            System.out.println("3. 계산 결과 삭제");
+            System.out.println("4. 계산 결과 삭제");
 
             System.out.println("    저장된 연산결과를 제거하려면 True 를 입력하고 아니면 아무값을 입력하세요 \n    (가장 처음에 저장된 결과 값부터 제거됩니다.)");
             String delCheck = sc.next();
@@ -57,7 +58,7 @@ public class App {
                 break;
             } else {
                 System.out.println("    다시 계산합니다. (입력 문자열: " + exit + ")");
-                System.out.println();
+                System.out.println("----------------------------------------------------------------------");
             }
         }
 
