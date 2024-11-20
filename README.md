@@ -30,4 +30,5 @@
 - 가장 오래된 기록을 삭제할 수 있는 기능을 제공합니다.
 
 
+![image](https://github.com/user-attachments/assets/62bc213b-27ac-40c9-bc98-36886a551e98)
 
