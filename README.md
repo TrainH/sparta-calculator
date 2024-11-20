@@ -21,7 +21,10 @@
 - 두 숫자와 연산자(`+`, `-`, `*`, `/`)를 입력받아 연산을 수행합니다.
 - 사용자가 `exit`을 입력할 때까지 계속 작동합니다.
 
-![기본 계산기 이미지](https://github.com/user-attachments/assets/9a0b27af-cb6e-4507-8545-75461ec5f2ba)
+
+https://github.com/user-attachments/assets/709b0779-0c3b-4921-b2b0-d346249d239d
+
+
 
 ---
 
